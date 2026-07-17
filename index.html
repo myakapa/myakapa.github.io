@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes outils — myakapa</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card-bg: #171a23;
+    --card-hover: #1e222e;
+    --border: #2a2f3d;
+    --text: #e8e9ed;
+          --text-dim: #9aa0ae;
+    --accent: #4f8cff;
+}
+  * { box-sizing: border-box; }
+  body {
+        margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 24px;
+}
+  header {
+        text-align: center;
+    margin-bottom: 48px;
+}
+  header h1 {
+        font-size: 2rem;
+    margin: 0 0 8px;
+}
+  header p {
+        color: var(--text-dim);
+    margin: 0;
+    font-size: 1rem;
+  }
+  .grid {
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 960px;
+    }
+  a.card {
+    display: block;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 24px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+  a.card:hover {
+        background: var(--card-hover);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+  .card .icon {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .card h2 {
+        font-size: 1.15rem;
+    margin: 0 0 8px;
+  }
+  .card p {
+        font-size: 0.9rem;
+    color: var(--text-dim);
+    margin: 0 0 14px;
+    line-height: 1.4;
+}
+  .card .link {
+    font-size: 0.85rem;
+    color: var(--accent);
+  }
+  footer {
+        margin-top: 56px;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    text-align: center;
+}
+  footer a {
+        color: var(--text-dim);
+  }
+</style>
+  </head>
+  <body>
+    <header>
+      <h1>Mes outils</h1>
+      <p>Tableaux de bord &amp; simulateurs</p>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="https://myakapa.github.io/simulateur-ciop/" target="_blank" rel="noopener">
+        <span class="icon">🏠</span>
+        <h2>Simulateur de rentabilité CIOP</h2>
+      <p>Crédit d'impôt pour l'investissement outre-mer productif — simulation de rentabilité locative.</p>
+        <span class="link">Ouvrir →</span>
+      </a>
+
+      <a class="card" href="https://script.google.com/macros/s/AKfycbwOnu90lJi1OXLx5VYmsXbGXP3Czm4Y3kOmKhwWvZ1oeMj7zxqjho4tJghULBpVGT40/exec" target="_blank" rel="noopener">
+        <span class="icon">📊</span>
+        <h2>Reporting SOWINK</h2>
+        <p>Tableau de reporting Google Apps Script.</p>
+        <span class="link">Ouvrir →</span>
+      </a>
+
+      <a class="card" href="https://script.google.com/macros/s/AKfycbxqJgPPDCqayVBw8SGCn6G28iqH_WOoIJWkhGVRlZMlONZSQyVsHuF4bYC1A5fla43n7w/exec" target="_blank" rel="noopener">
+        <span class="icon">📰</span>
+        <h2>Suivi des publications</h2>
+      <p>Suivi Google Apps Script des publications.</p>
+        <span class="link">Ouvrir →</span>
+      </a>
+    </div>
+
+    <footer>
+      <p>myakapa.github.io</p>
+    </footer>
+  </body>
+  </html>
+  
